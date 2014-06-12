@@ -70,7 +70,7 @@ def existing_path(arg):
         raise argparse.ArgumentTypeError("path '%s' does not exist" % arg)
     return arg
 
-def exitsing_absolute_path(arg):
+def existing_absolute_path(arg):
     """Make sure arg exists, and convert it to an absolute path"""
     return absolute_path(existing_path(arg))
 
@@ -80,7 +80,7 @@ def existing_dir(arg):
         raise argparse.ArgumentTypeError("directory '%s' does not exist" % arg)
     return arg
 
-def exitsing_absolute_dir(arg):
+def existing_absolute_dir(arg):
     """Make sure arg is a directory, and convert it to an absolute path"""
     return absolute_path(existing_dir(arg))
 
